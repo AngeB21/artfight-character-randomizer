@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mystery Character Generator</title>
+    <meta charset="UTF-8">
+</head>
+<body style="font-family:Arial;text-align:center;padding-top:50px;">
+
+<h1>🎲 Mystery Character Generator</h1>
+
+<button onclick="generate()">
+    Generate Character
+</button>
+
+<script>
+const characters = [
+    "https://artfight.net/character/2478321.angel",
+    "https://artfight.net/character/4957886.ange",
+    "https://artfight.net/character/4362663.chantilixy",
+    "https://artfight.net/character/8730559.aurora",
+    "https://artfight.net/character/3319742.bartholomew-vampireboy",
+    "https://artfight.net/character/2488454.coeur-fragmente",
+    "https://artfight.net/character/2441454.charlotte-mushroom-girl",
+    "https://artfight.net/character/3031761.cringe"
+];
+
+function generate() {
+    const random = characters[Math.floor(Math.random() * characters.length)];
+    window.location.href = random;
+}
+</script>
+
+</body>
+</html>
