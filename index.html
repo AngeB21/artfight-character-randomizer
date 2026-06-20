@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mystery Character Generator</title>
+    <title>Picking a random character...</title>
     <meta charset="UTF-8">
 </head>
 <body style="font-family:Arial;text-align:center;padding-top:50px;">
 
-<h1>🎲 Mystery Character Generator</h1>
+<!--<h1>🎲 Mystery Character Generator</h1>
 
 <button onclick="generate()">
     Generate Character
-</button>
+</button>-->
 
 <script>
 const characters = [
@@ -23,11 +23,13 @@ const characters = [
     "https://artfight.net/character/2441454.charlotte-mushroom-girl",
     "https://artfight.net/character/3031761.cringe"
 ];
-
+const random = characters[Math.floor(Math.random() * characters.length)];
+    
 function generate() {
-    const random = characters[Math.floor(Math.random() * characters.length)];
     window.location.href = random;
 }
+<!--Redirecting-->
+window.location.replace(random);    
 </script>
 
 </body>
